@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CourseLecturerDemo", "CourseLecturerDemo\CourseLecturerDemo.csproj", "{C8655EEC-0157-4F21-B60E-038BB4C1DD93}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zBackEndHelperLibrary", "zBackEndHelperLibrary\zBackEndHelperLibrary.csproj", "{965D697A-5A2E-4B4D-AB47-59D7985B5224}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zFrontEndHelperLibrary", "zFrontEndHelperLibrary\zFrontEndHelperLibrary.csproj", "{64B1B450-CD7E-487D-8C4A-D841B2FAFBC5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{C8655EEC-0157-4F21-B60E-038BB4C1DD93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8655EEC-0157-4F21-B60E-038BB4C1DD93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8655EEC-0157-4F21-B60E-038BB4C1DD93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{965D697A-5A2E-4B4D-AB47-59D7985B5224}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{965D697A-5A2E-4B4D-AB47-59D7985B5224}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{965D697A-5A2E-4B4D-AB47-59D7985B5224}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{965D697A-5A2E-4B4D-AB47-59D7985B5224}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64B1B450-CD7E-487D-8C4A-D841B2FAFBC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64B1B450-CD7E-487D-8C4A-D841B2FAFBC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64B1B450-CD7E-487D-8C4A-D841B2FAFBC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64B1B450-CD7E-487D-8C4A-D841B2FAFBC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

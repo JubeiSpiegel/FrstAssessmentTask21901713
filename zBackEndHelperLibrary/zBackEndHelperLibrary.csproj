@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C8655EEC-0157-4F21-B60E-038BB4C1DD93}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>CourseLecturerDemo</RootNamespace>
-    <AssemblyName>CourseLecturerDemo</AssemblyName>
+    <ProjectGuid>{965D697A-5A2E-4B4D-AB47-59D7985B5224}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>zBackEndHelperLibrary</RootNamespace>
+    <AssemblyName>zBackEndHelperLibrary</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,21 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="BackEndHelperMethods.cs" />
+    <Compile Include="Course.cs" />
+    <Compile Include="Lecturer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\zBackEndHelperLibrary\zBackEndHelperLibrary.csproj">
-      <Project>{965d697a-5a2e-4b4d-ab47-59d7985b5224}</Project>
-      <Name>zBackEndHelperLibrary</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\zFrontEndHelperLibrary\zFrontEndHelperLibrary.csproj">
-      <Project>{64b1b450-cd7e-487d-8c4a-d841b2fafbc5}</Project>
-      <Name>zFrontEndHelperLibrary</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
