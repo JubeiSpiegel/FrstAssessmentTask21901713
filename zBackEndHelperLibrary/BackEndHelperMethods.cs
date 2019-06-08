@@ -101,6 +101,20 @@ namespace zBackEndHelperLibrary
             try
             {
                 inputCN = Console.ReadLine().TrimStart().TrimEnd();
+                if (inputCN.Length == 0)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("***ERROR: Field can't be EMPTY, please enter a valid data input");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    goto ConditionCN;
+                }
+                if (inputCN.Length >= 32)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("***ERROR: Field can't be LONGER THAN 32 Characters, please enter a valid data input");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    goto ConditionCN;
+                }
                 return inputCN;
             }
             catch (Exception e)
@@ -121,6 +135,20 @@ namespace zBackEndHelperLibrary
             try
             {
                 inputFN = Console.ReadLine();
+                if (inputFN.Length==0)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("***ERROR: Field can't be EMPTY, please enter a valid data input");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    goto ConditionFN;
+                }
+                if (inputFN.Length >= 32)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("***ERROR: Field can't be LONGER THAN 32 Characters, please enter a valid data input");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    goto ConditionFN;
+                }
             }
             catch (Exception eFN)
             {
@@ -136,6 +164,20 @@ namespace zBackEndHelperLibrary
             try
             {
                 inputLN = Console.ReadLine();
+                if (inputLN.Length == 0)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("***ERROR: Field can't be EMPTY, please enter a valid data input");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    goto ConditionLN;
+                }
+                if (inputLN.Length >= 32)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("***ERROR: Field can't be LONGER THAN 32 Characters, please enter a valid data input");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    goto ConditionLN;
+                }
             }
             catch (Exception eLN)
             {
